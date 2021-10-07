@@ -46,8 +46,7 @@ compatible with our ODE45 solver.
 1. ψ(x, y, z) = cos(x) cos(y) cos(z)
 2. ψ(x, y, z) = sin(x) sin(y) sin(z)
 
-![](figures/code.png)
-
+<img src="figures/code.png"  width="37%"/>
 
 ODE45 then returns the solution, which needs to be reverted to the time-domain as a 3D matrix
 to properly resemble the wave function of our problem. Squaring this solution gives us the

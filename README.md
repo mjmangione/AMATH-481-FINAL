@@ -30,6 +30,9 @@ iterate this function in time using the Runge-Kutta 4th order method provided by
 function ODE45. Where ​ **K** ​ and ​ **spacial** ​ are 3D matrices previously evaluated outside of the
 function. ​ **K** ​ represents the Laplace operator in Fourier space, and ​ **spacial** ​ represents the
 space-based constants, which are not dependent on time.
+
+![](figures/code3.png)
+
 From here, along with additional setup, we can utilize ODE45 to get a solution.
 Specifically, we are simulating this equation for 4 seconds, along the [-π, π] domain in all three
 spacial dimensions. We will solve with 2 different initial states, shown on the left, which are

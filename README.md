@@ -43,19 +43,28 @@ compatible with our ODE45 solver.
 1. ψ(x, y, z) = cos(x) cos(y) cos(z)
 2. ψ(x, y, z) = sin(x) sin(y) sin(z)
 
+![](figures/code.png)
+
 
 ODE45 then returns the solution, which needs to be reverted to the time-domain as a 3D matrix
 to properly resemble the wave function of our problem. Squaring this solution gives us the
 probability density of the particles.
 
+![](figures/code2.png)
 
 The two isosurfaces below correspond to the probability densities of the bosons created
 with our two different initial conditions. Because we are utilizing periodic boundary conditions,
 the cosine solution is fragmented along the edges, but still resembles the array of 8 spheres
 neatly displayed by the sine solution.
 
-ψ(x, y, z) = cos(x) cos(y) cos(z) 
+ψ(x, y, z) = cos(x) cos(y) cos(z)
+
+<img src="figures/cosineBEC.jpg" alt="cosine BEC 3D solution" width="60%"/>
+
 ψ(x, y, z) = sin(x) sin(y) sin(z)
+
+<img src="figures/sineBEC.jpg" alt="sine BEC 3D solution" width="60%"/>
+
 
 These solutions are relatively stable, not changing much over the span of the 4 second
 interval used. They reflect what is already understood about particles in a Bose-Einstein
